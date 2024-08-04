@@ -8,7 +8,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class UserResponse {
+public class UserResponse {       //class wth a "body" of response which sends to user
     private String translatedText;
     private int responseStatus;
     private String responseDetails;

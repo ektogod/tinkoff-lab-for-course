@@ -3,26 +3,31 @@ package com.tinkoff_lab.controllers;
 
 import com.tinkoff_lab.requests.UserRequest;
 import com.tinkoff_lab.responses.UserResponse;
-import com.tinkoff_lab.services.TranslationService;
+import com.tinkoff_lab.services.TranslationServiceImpl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/ektogod/translateText")
-public class TranslationController {
-    private TranslationService translationService;
+
+public class TranslationController {                 // class for receiving requests from users
+    private TranslationServiceImpl translationService;
+    private Logger logger = LoggerFactory.getLogger(TranslationController.class);
 
     @Autowired
-    public TranslationController(TranslationService translationService) {
+    public TranslationController(TranslationServiceImpl translationService) {
         this.translationService = translationService;
     }
 
-    @PostMapping(consumes = "application/json",
+    @GetMapping(consumes = "application/json",
             produces = "application/json")
+
     public UserResponse translate(@RequestBody UserRequest request) {
-        return translationService.translateByThreads(request);
+        logger.info("Request from user has received: {}", request);
+        UserResponse response =  translationService.translate(request);
+        logger.info("Response is sending to user");
+        return response;
     }
 }

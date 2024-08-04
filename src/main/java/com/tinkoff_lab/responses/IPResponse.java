@@ -6,7 +6,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class IPResponse {
+public class IPResponse {   // a class for storing response with current user external ip
     @JsonProperty("ip")
     private String ip;
 }
