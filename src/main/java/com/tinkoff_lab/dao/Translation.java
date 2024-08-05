@@ -1,14 +1,13 @@
 package com.tinkoff_lab.dao;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @ToString
+@EqualsAndHashCode
+
 public class Translation {    // class for saving info about database records
     //private int id;
     private String ip;
@@ -18,4 +17,5 @@ public class Translation {    // class for saving info about database records
     private String targetLang;
     private String time;
     private int status;
+    private String message;
 }

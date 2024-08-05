@@ -42,24 +42,28 @@ public class TranslationServiceImpl implements TranslationService {
     @Override
     public UserResponse translate(UserRequest request) {
         String[] words = request.getText().split(" +");
-        ExecutorService executorService = Executors.newFixedThreadPool(THREADS_CONST);
         translatedWords = new String[words.length];
+
+        ExecutorService executorService = Executors.newFixedThreadPool(THREADS_CONST);
+
         for (int i = 0; i < words.length; i++) {   // translating each word separately
             int finalI = i;
-            var response = executorService.submit(() -> translateWord(words[finalI],  // sending each word in a thread
-                    request.getOriginalLanguage(),
-                    request.getFinalLanguage(),
-                    finalI));
+            var response = executorService.submit(() -> translateWord(
+                            words[finalI],  // sending each word in a thread
+                            request.getOriginalLanguage(),
+                            request.getFinalLanguage(),
+                            finalI));
             try {
                 if (!HttpStatus.valueOf(response.get().getBody().getResponseStatus()).is2xxSuccessful()) {   // checking status - throwing exception if something wrong
-                    Translation translation = new Translation(
+                    Translation translation = new Translation(  // needs for writing in db in ExceptionHandler class
                             utils.getIP(),
                             request.getText(),
                             request.getOriginalLanguage(),
                             "",
                             request.getFinalLanguage(),
                             utils.getMoscowTime(),
-                            response.get().getBody().getResponseStatus());
+                            response.get().getBody().getResponseStatus(),
+                            response.get().getBody().getResponseDetails());
 
                     logger.error("Something goes wrong with translation for word <{}>, status is {}",
                             words[finalI],
@@ -74,7 +78,7 @@ public class TranslationServiceImpl implements TranslationService {
         }
 
         executorService.shutdown();
-        try {
+        try {    // if something goes wrong with threads
             if (!executorService.awaitTermination(30, TimeUnit.SECONDS)) {
                 executorService.shutdownNow();
                 logger.error("Thread wait limit exceeded!");
@@ -89,14 +93,15 @@ public class TranslationServiceImpl implements TranslationService {
 
         logger.info("Translation successfully completed");
         String translatedText = String.join(" ", translatedWords);
-        dao.insert(new Translation(  // saving in database
+        dao.insert(new Translation(  // saving in database successful translation
                 utils.getIP(),
                 request.getText(),
                 request.getOriginalLanguage(),
                 translatedText,
                 request.getFinalLanguage(),
                 utils.getMoscowTime(),
-                200));
+                200,
+                "Ok"));
         return new UserResponse(translatedText, 200, "");
     }
 
@@ -123,7 +128,7 @@ public class TranslationServiceImpl implements TranslationService {
 
         logger.info("Request has received: word = {} ", word);
 
-        translatedWords[index] = response
+        translatedWords[index] = response  // writing translated words to build a full translated text дфеук
                 .getBody()
                 .getTranslatedText();
 

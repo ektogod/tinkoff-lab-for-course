@@ -9,7 +9,6 @@ import java.util.Map;
 @Getter
 @Setter
 public class TranslateResponse {    // class for storing response from translation API
-    //@JsonProperty("translatedText")
     private String translatedText;
 
     @JsonProperty("responseStatus")
