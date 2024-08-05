@@ -41,6 +41,8 @@ public class TranslationServiceImpl implements TranslationService {
 
     @Override
     public UserResponse translate(UserRequest request) {
+        checkForNullParams(request); // checking request for null fields
+
         String[] words = request.getText().split(" +");
         translatedWords = new String[words.length];
 
@@ -102,7 +104,7 @@ public class TranslationServiceImpl implements TranslationService {
                 utils.getMoscowTime(),
                 200,
                 "Ok"));
-        return new UserResponse(translatedText, 200, "");
+        return new UserResponse(translatedText);
     }
 
     private ResponseEntity<TranslateResponse> translateWord(String word, String fromLang, String toLang, int index) {
@@ -128,10 +130,28 @@ public class TranslationServiceImpl implements TranslationService {
 
         logger.info("Request has received: word = {} ", word);
 
-        translatedWords[index] = response  // writing translated words to build a full translated text дфеук
+        translatedWords[index] = response  // writing translated words to build a full translated text later
                 .getBody()
                 .getTranslatedText();
 
         return response;
+    }
+
+    private void checkForNullParams(UserRequest request){
+        if (request.getText() == null ||
+                request.getOriginalLanguage() == null ||
+                request.getFinalLanguage() == null){
+            String message = "Translation went wrong because something from parameters is null!";
+            Translation translation = new Translation(  // needs for writing in db in ExceptionHandler class
+                    utils.getIP(),
+                    request.getText(),
+                    request.getOriginalLanguage(),
+                    "",
+                    request.getFinalLanguage(),
+                    utils.getMoscowTime(),
+                    500,
+                    message);
+            throw new TranslationException(message, translation);
+        }
     }
 }

@@ -174,7 +174,7 @@ public class DatabaseTest {
 //    @Test
 //    public void testWithIncorrectLanguageInUserRequest() throws Exception {
 //        mockMvc.perform(MockMvcRequestBuilders
-//                        .get("/ektogod/translateText")
+//                        .post("/ektogod/translateText")
 //                        .content("{\"text\":\"Любовь\", \"originalLanguage\":\"ru\", \"finalLanguage\":\"by\"}")
 //                        .contentType("application/json"))
 //                .andExpect(MockMvcResultMatchers.status().is(403))

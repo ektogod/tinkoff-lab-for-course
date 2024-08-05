@@ -21,7 +21,7 @@ public class TranslationController {                 // class for receiving requ
         this.translationService = translationService;
     }
 
-    @GetMapping(consumes = "application/json",
+    @PostMapping(consumes = "application/json",
             produces = "application/json")
 
     public UserResponse translate(@RequestBody UserRequest request) {

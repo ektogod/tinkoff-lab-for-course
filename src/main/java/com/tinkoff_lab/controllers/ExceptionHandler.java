@@ -1,4 +1,4 @@
-package com.tinkoff_lab;
+package com.tinkoff_lab.controllers;
 
 import com.tinkoff_lab.dao.TranslationDAO;
 import com.tinkoff_lab.exceptions.DatabaseConnectionException;

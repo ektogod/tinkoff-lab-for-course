@@ -578,3 +578,430 @@
 2024-08-05 04:35:58 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=178.125.157.53, originalText=Любовь, originalLang=ru, translatedText=, targetLang=by, time=2024/08/05 04:35:58, status=403, message='BY' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT)
 2024-08-05 04:35:58 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
 2024-08-05 04:35:58 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 18:09:04 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=be)
+2024-08-05 18:09:04 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 18:09:05 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 18:09:05 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 18:09:05 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Каханне, targetLang=be, time=2024/08/05 18:09:05, status=200, message=Ok)
+2024-08-05 18:09:06 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 18:09:06 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 18:09:06 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 18:09:14 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-08-05 18:09:15 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 20.0.2 with PID 3004 (C:\Users\Nikita\IdeaProjects\tinkoff_lab\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\tinkoff_lab)
+2024-08-05 18:09:15 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-05 18:09:17 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 3.39 seconds (process running for 4.265)
+2024-08-05 18:09:17 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+2024-08-05 18:09:37 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=be)
+2024-08-05 18:09:37 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 18:09:38 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 18:09:38 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 18:09:38 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Каханне, targetLang=be, time=2024/08/05 18:09:38, status=200, message=Ok)
+2024-08-05 18:09:39 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 18:09:39 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 18:09:39 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 18:10:32 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=be)
+2024-08-05 18:10:32 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 18:10:41 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-08-05 18:10:42 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 20.0.2 with PID 4288 (C:\Users\Nikita\IdeaProjects\tinkoff_lab\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\tinkoff_lab)
+2024-08-05 18:10:42 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-05 18:10:44 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 2.78 seconds (process running for 3.588)
+2024-08-05 18:10:44 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+2024-08-05 18:10:48 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=be)
+2024-08-05 18:10:48 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 18:10:49 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 18:10:49 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 18:10:49 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Каханне, targetLang=be, time=2024/08/05 18:10:49, status=200, message=Ok)
+2024-08-05 18:10:49 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 18:10:49 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 18:10:49 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 18:11:23 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=be)
+2024-08-05 18:11:23 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 18:11:24 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 18:11:24 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 18:11:25 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Каханне, targetLang=be, time=2024/08/05 18:11:25, status=200, message=Ok)
+2024-08-05 18:11:25 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 18:11:25 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 18:11:25 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 18:16:18 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=be)
+2024-08-05 18:16:18 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 18:16:27 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 18:16:27 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 18:16:27 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Каханне, targetLang=be, time=2024/08/05 18:16:27, status=200, message=Ok)
+2024-08-05 18:16:27 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 18:16:27 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 18:16:27 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 18:17:28 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 18:17:28 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 18:17:29 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 18:17:29 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 18:17:29 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 18:17:29, status=200, message=Ok)
+2024-08-05 18:17:30 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 18:17:30 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 18:17:30 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 18:22:59 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 18:22:59 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 18:27:22 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 18:27:22 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 18:27:26 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 18:27:26 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 18:27:26 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 18:27:26, status=200, message=Ok)
+2024-08-05 18:27:27 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 18:27:27 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 18:27:27 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 18:28:24 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 18:28:24 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 18:28:25 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 18:28:25 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 18:28:25 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 18:28:25, status=200, message=Ok)
+2024-08-05 18:28:26 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 18:28:26 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 18:28:26 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 18:29:58 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 18:29:58 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 18:29:59 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 18:29:59 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 18:29:59 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 18:29:59, status=200, message=Ok)
+2024-08-05 18:29:59 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 18:29:59 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 18:29:59 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 18:41:03 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 18:41:03 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 18:41:11 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 18:41:11 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 18:41:12 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 18:41:12, status=200, message=Ok)
+2024-08-05 18:41:12 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 18:41:12 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 18:41:12 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 18:46:00 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 18:46:00 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 18:46:08 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 18:46:08 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 18:46:09 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 18:46:09, status=200, message=Ok)
+2024-08-05 18:46:09 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 18:46:09 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 18:46:09 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 18:47:21 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 18:47:21 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 18:47:22 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 18:47:22 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 18:47:22 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 18:47:22, status=200, message=Ok)
+2024-08-05 18:47:22 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 18:47:22 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 18:47:22 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 18:49:59 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 18:49:59 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 18:50:00 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 18:50:00 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 18:50:00 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 18:50:00, status=200, message=Ok)
+2024-08-05 18:50:01 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 18:50:01 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 18:50:01 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 18:58:34 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 18:58:34 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 18:58:42 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 18:58:42 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 18:58:42 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 18:58:42, status=200, message=Ok)
+2024-08-05 18:58:42 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 18:58:42 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 18:58:42 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 19:09:07 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 19:09:07 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 19:09:08 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 19:09:08 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 19:09:08 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 19:09:08, status=200, message=Ok)
+2024-08-05 19:09:09 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:09:09 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 19:09:09 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 19:10:14 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 19:10:14 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 19:10:16 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 19:10:16 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 19:10:16 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 19:10:16, status=200, message=Ok)
+2024-08-05 19:10:16 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:10:16 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 19:10:16 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 19:13:15 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 19:13:15 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 19:13:16 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 19:13:16 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 19:13:16 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 19:13:16, status=200, message=Ok)
+2024-08-05 19:13:16 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:13:16 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 19:13:16 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 19:16:17 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 19:16:17 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 19:16:18 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 19:16:18 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 19:16:19 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 19:16:19, status=200, message=Ok)
+2024-08-05 19:16:19 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:16:19 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 19:16:19 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 19:17:42 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 19:17:42 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 19:17:43 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 19:17:43 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 19:17:43 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 19:17:43, status=200, message=Ok)
+2024-08-05 19:17:44 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:17:44 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 19:17:44 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 19:19:30 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 19:19:30 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 19:19:38 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 19:19:38 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 19:19:38 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 19:19:38, status=200, message=Ok)
+2024-08-05 19:19:38 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:19:38 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 19:19:38 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 19:19:50 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=, originalLanguage=ru, finalLanguage=en)
+2024-08-05 19:19:50 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word =  
+2024-08-05 19:19:51 INFO  c.t.services.TranslationServiceImpl - Request has received: word =  
+2024-08-05 19:19:51 ERROR c.t.services.TranslationServiceImpl - Something goes wrong with translation for word <>, status is 403
+2024-08-05 19:19:51 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=, originalLang=ru, translatedText=, targetLang=en, time=2024/08/05 19:19:51, status=403, message=NO QUERY SPECIFIED. EXAMPLE REQUEST: GET?Q=HELLO&LANGPAIR=EN|IT)
+2024-08-05 19:19:51 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:19:51 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 19:19:51 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 19:19:51 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 19:19:51 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 19:19:51 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 19:19:52 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 19:19:52, status=200, message=Ok)
+2024-08-05 19:19:52 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:19:52 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 19:19:52 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 19:20:20 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=, originalLanguage=ru, finalLanguage=en)
+2024-08-05 19:20:20 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word =  
+2024-08-05 19:20:20 INFO  c.t.services.TranslationServiceImpl - Request has received: word =  
+2024-08-05 19:20:21 ERROR c.t.services.TranslationServiceImpl - Something goes wrong with translation for word <>, status is 403
+2024-08-05 19:20:21 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=, originalLang=ru, translatedText=, targetLang=en, time=2024/08/05 19:20:21, status=403, message=NO QUERY SPECIFIED. EXAMPLE REQUEST: GET?Q=HELLO&LANGPAIR=EN|IT)
+2024-08-05 19:20:21 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:20:21 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 19:20:21 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 19:20:21 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 19:20:21 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 19:20:21 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 19:20:22 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 19:20:22, status=200, message=Ok)
+2024-08-05 19:20:22 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:20:22 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 19:20:22 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 19:20:32 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-08-05 19:20:33 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 20.0.2 with PID 17796 (C:\Users\Nikita\IdeaProjects\tinkoff_lab\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\tinkoff_lab)
+2024-08-05 19:20:33 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-05 19:20:35 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 2.652 seconds (process running for 3.608)
+2024-08-05 19:20:35 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+2024-08-05 19:20:39 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=, originalLanguage=ru, finalLanguage=be)
+2024-08-05 19:20:39 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word =  
+2024-08-05 19:20:39 INFO  c.t.services.TranslationServiceImpl - Request has received: word =  
+2024-08-05 19:20:40 ERROR c.t.services.TranslationServiceImpl - Something goes wrong with translation for word <>, status is 403
+2024-08-05 19:20:40 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=, originalLang=ru, translatedText=, targetLang=be, time=2024/08/05 19:20:40, status=403, message=NO QUERY SPECIFIED. EXAMPLE REQUEST: GET?Q=HELLO&LANGPAIR=EN|IT)
+2024-08-05 19:20:40 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:20:40 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 19:22:04 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-08-05 19:22:04 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 20.0.2 with PID 1716 (C:\Users\Nikita\IdeaProjects\tinkoff_lab\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\tinkoff_lab)
+2024-08-05 19:22:04 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-05 19:22:07 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 3.33 seconds (process running for 4.208)
+2024-08-05 19:22:07 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+2024-08-05 19:22:07 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=null, originalLanguage=ru, finalLanguage=be)
+2024-08-05 19:22:43 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=, originalLanguage=null, finalLanguage=be)
+2024-08-05 19:22:43 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word =  
+2024-08-05 19:22:44 INFO  c.t.services.TranslationServiceImpl - Request has received: word =  
+2024-08-05 19:22:44 ERROR c.t.services.TranslationServiceImpl - Something goes wrong with translation for word <>, status is 403
+2024-08-05 19:22:44 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=, originalLang=null, translatedText=, targetLang=be, time=2024/08/05 19:22:44, status=403, message=NO QUERY SPECIFIED. EXAMPLE REQUEST: GET?Q=HELLO&LANGPAIR=EN|IT)
+2024-08-05 19:22:44 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:22:44 ERROR com.tinkoff_lab.dao.TranslationDAO - Insertion of query in database goes wrong!
+2024-08-05 19:26:04 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=null, originalLanguage=ru, finalLanguage=en)
+2024-08-05 19:26:04 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=, originalLanguage=ru, finalLanguage=en)
+2024-08-05 19:26:04 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word =  
+2024-08-05 19:26:12 INFO  c.t.services.TranslationServiceImpl - Request has received: word =  
+2024-08-05 19:26:13 ERROR c.t.services.TranslationServiceImpl - Something goes wrong with translation for word <>, status is 403
+2024-08-05 19:26:13 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=, originalLang=ru, translatedText=, targetLang=en, time=2024/08/05 19:26:13, status=403, message=NO QUERY SPECIFIED. EXAMPLE REQUEST: GET?Q=HELLO&LANGPAIR=EN|IT)
+2024-08-05 19:26:13 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:26:13 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 19:26:13 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 19:26:13 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 19:26:15 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 19:26:15 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 19:26:16 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 19:26:16, status=200, message=Ok)
+2024-08-05 19:26:16 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:26:16 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 19:26:16 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 19:26:16 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=by)
+2024-08-05 19:26:16 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 19:26:16 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 19:26:16 ERROR c.t.services.TranslationServiceImpl - Something goes wrong with translation for word <любовь>, status is 403
+2024-08-05 19:26:16 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=, targetLang=by, time=2024/08/05 19:26:16, status=403, message='BY' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT)
+2024-08-05 19:26:16 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:26:16 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 19:26:56 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=null, originalLanguage=ru, finalLanguage=en)
+2024-08-05 19:26:56 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=, originalLanguage=ru, finalLanguage=en)
+2024-08-05 19:26:56 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word =  
+2024-08-05 19:26:57 INFO  c.t.services.TranslationServiceImpl - Request has received: word =  
+2024-08-05 19:26:57 ERROR c.t.services.TranslationServiceImpl - Something goes wrong with translation for word <>, status is 403
+2024-08-05 19:26:57 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=, originalLang=ru, translatedText=, targetLang=en, time=2024/08/05 19:26:57, status=403, message=NO QUERY SPECIFIED. EXAMPLE REQUEST: GET?Q=HELLO&LANGPAIR=EN|IT)
+2024-08-05 19:26:57 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:26:57 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 19:26:57 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 19:26:57 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 19:26:57 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 19:26:57 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 19:26:58 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 19:26:58, status=200, message=Ok)
+2024-08-05 19:26:58 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:26:58 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 19:26:58 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 19:26:58 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=by)
+2024-08-05 19:26:58 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 19:26:58 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 19:26:58 ERROR c.t.services.TranslationServiceImpl - Something goes wrong with translation for word <любовь>, status is 403
+2024-08-05 19:26:58 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=, targetLang=by, time=2024/08/05 19:26:58, status=403, message='BY' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT)
+2024-08-05 19:26:58 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:26:58 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 19:31:39 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=null, originalLanguage=ru, finalLanguage=en)
+2024-08-05 19:31:39 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=, originalLanguage=ru, finalLanguage=en)
+2024-08-05 19:31:39 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word =  
+2024-08-05 19:31:46 INFO  c.t.services.TranslationServiceImpl - Request has received: word =  
+2024-08-05 19:31:47 ERROR c.t.services.TranslationServiceImpl - Something goes wrong with translation for word <>, status is 403
+2024-08-05 19:31:47 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=, originalLang=ru, translatedText=, targetLang=en, time=2024/08/05 19:31:47, status=403, message=NO QUERY SPECIFIED. EXAMPLE REQUEST: GET?Q=HELLO&LANGPAIR=EN|IT)
+2024-08-05 19:31:47 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:31:47 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 19:31:47 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 19:31:47 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 19:31:47 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 19:31:47 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 19:31:47 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 19:31:47, status=200, message=Ok)
+2024-08-05 19:31:47 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:31:47 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 19:31:47 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 19:31:47 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=by)
+2024-08-05 19:31:47 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 19:31:48 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 19:31:48 ERROR c.t.services.TranslationServiceImpl - Something goes wrong with translation for word <любовь>, status is 403
+2024-08-05 19:31:48 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=, targetLang=by, time=2024/08/05 19:31:48, status=403, message='BY' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT)
+2024-08-05 19:31:48 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:31:48 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 19:42:48 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=null, originalLanguage=ru, finalLanguage=en)
+2024-08-05 19:42:48 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=null, originalLang=ru, translatedText=, targetLang=en, time=2024/08/05 19:42:48, status=500, message=Translation went wrong because something from parameters is null!)
+2024-08-05 19:42:49 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:42:49 ERROR com.tinkoff_lab.dao.TranslationDAO - Insertion of query in database goes wrong!
+2024-08-05 19:42:49 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=, originalLanguage=ru, finalLanguage=en)
+2024-08-05 19:42:49 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word =  
+2024-08-05 19:42:49 INFO  c.t.services.TranslationServiceImpl - Request has received: word =  
+2024-08-05 19:42:49 ERROR c.t.services.TranslationServiceImpl - Something goes wrong with translation for word <>, status is 403
+2024-08-05 19:42:49 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=, originalLang=ru, translatedText=, targetLang=en, time=2024/08/05 19:42:49, status=403, message=NO QUERY SPECIFIED. EXAMPLE REQUEST: GET?Q=HELLO&LANGPAIR=EN|IT)
+2024-08-05 19:42:49 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:42:49 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 19:42:49 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 19:42:49 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 19:42:50 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 19:42:50 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 19:42:50 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 19:42:50, status=200, message=Ok)
+2024-08-05 19:42:50 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:42:50 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 19:42:50 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 19:42:50 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=by)
+2024-08-05 19:42:50 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 19:42:50 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 19:42:50 ERROR c.t.services.TranslationServiceImpl - Something goes wrong with translation for word <любовь>, status is 403
+2024-08-05 19:42:50 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=, targetLang=by, time=2024/08/05 19:42:50, status=403, message='BY' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT)
+2024-08-05 19:42:50 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 19:42:50 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 20:02:48 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-08-05 20:02:49 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 20.0.2 with PID 4196 (C:\Users\Nikita\IdeaProjects\tinkoff_lab\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\tinkoff_lab)
+2024-08-05 20:02:49 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-05 20:02:51 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 2.794 seconds (process running for 3.98)
+2024-08-05 20:02:51 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+2024-08-05 20:03:03 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=null, originalLanguage=ru, finalLanguage=be)
+2024-08-05 20:03:04 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=null, originalLang=ru, translatedText=, targetLang=be, time=2024/08/05 20:03:04, status=500, message=Translation went wrong because something from parameters is null!)
+2024-08-05 20:03:04 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 20:03:04 ERROR com.tinkoff_lab.dao.TranslationDAO - Insertion of query in database goes wrong!
+2024-08-05 20:09:17 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-08-05 20:09:17 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 20.0.2 with PID 9136 (C:\Users\Nikita\IdeaProjects\tinkoff_lab\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\tinkoff_lab)
+2024-08-05 20:09:17 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-05 20:09:20 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 2.928 seconds (process running for 3.713)
+2024-08-05 20:09:20 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+2024-08-05 20:09:24 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=null, originalLanguage=ru, finalLanguage=be)
+2024-08-05 20:09:25 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=null, originalLang=ru, translatedText=, targetLang=be, time=2024/08/05 20:09:25, status=500, message=Translation went wrong because something from parameters is null!)
+2024-08-05 20:09:25 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 20:09:25 ERROR com.tinkoff_lab.dao.TranslationDAO - Insertion of query in database goes wrong!
+2024-08-05 20:14:27 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-08-05 20:14:28 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 20.0.2 with PID 10968 (C:\Users\Nikita\IdeaProjects\tinkoff_lab\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\tinkoff_lab)
+2024-08-05 20:14:28 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-05 20:14:30 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 3.104 seconds (process running for 3.983)
+2024-08-05 20:14:30 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+2024-08-05 20:14:30 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=null, originalLanguage=ru, finalLanguage=be)
+2024-08-05 20:14:49 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-08-05 20:14:50 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 20.0.2 with PID 9504 (C:\Users\Nikita\IdeaProjects\tinkoff_lab\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\tinkoff_lab)
+2024-08-05 20:14:50 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-05 20:14:53 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 3.555 seconds (process running for 5.057)
+2024-08-05 20:14:53 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+2024-08-05 20:14:59 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=null, originalLanguage=ru, finalLanguage=be)
+2024-08-05 20:15:20 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=null, originalLang=ru, translatedText=, targetLang=be, time=2024/08/05 20:15:12, status=500, message=Translation went wrong because something from parameters is null!)
+2024-08-05 20:15:22 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 20:15:22 ERROR com.tinkoff_lab.dao.TranslationDAO - Insertion of query in database goes wrong!
+2024-08-05 20:16:00 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-08-05 20:16:00 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 20.0.2 with PID 20336 (C:\Users\Nikita\IdeaProjects\tinkoff_lab\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\tinkoff_lab)
+2024-08-05 20:16:00 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-05 20:16:03 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 3.569 seconds (process running for 4.579)
+2024-08-05 20:16:03 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+2024-08-05 20:16:04 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=null, originalLanguage=ru, finalLanguage=be)
+2024-08-05 20:16:17 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=null, originalLang=ru, translatedText=, targetLang=be, time=2024/08/05 20:16:05, status=500, message=Translation went wrong because something from parameters is null!)
+2024-08-05 20:16:17 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 20:16:17 ERROR com.tinkoff_lab.dao.TranslationDAO - Insertion of query in database goes wrong!
+2024-08-05 20:19:13 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-08-05 20:19:13 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 20.0.2 with PID 15872 (C:\Users\Nikita\IdeaProjects\tinkoff_lab\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\tinkoff_lab)
+2024-08-05 20:19:13 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-05 20:19:16 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 2.991 seconds (process running for 4.16)
+2024-08-05 20:19:16 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+2024-08-05 20:19:17 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=null, originalLanguage=ru, finalLanguage=be)
+2024-08-05 20:19:18 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=null, originalLang=ru, translatedText=, targetLang=be, time=2024/08/05 20:19:18, status=500, message=Translation went wrong because something from parameters is null!)
+2024-08-05 20:19:19 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 20:19:19 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 20:20:33 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=null, originalLanguage=ru, finalLanguage=en)
+2024-08-05 20:20:34 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=null, originalLang=ru, translatedText=, targetLang=en, time=2024/08/05 20:20:34, status=500, message=Translation went wrong because something from parameters is null!)
+2024-08-05 20:20:35 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 20:20:35 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 20:20:35 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=, originalLanguage=ru, finalLanguage=en)
+2024-08-05 20:20:35 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word =  
+2024-08-05 20:20:35 INFO  c.t.services.TranslationServiceImpl - Request has received: word =  
+2024-08-05 20:20:35 ERROR c.t.services.TranslationServiceImpl - Something goes wrong with translation for word <>, status is 403
+2024-08-05 20:20:35 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=, originalLang=ru, translatedText=, targetLang=en, time=2024/08/05 20:20:35, status=403, message=NO QUERY SPECIFIED. EXAMPLE REQUEST: GET?Q=HELLO&LANGPAIR=EN|IT)
+2024-08-05 20:20:35 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 20:20:35 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 20:20:35 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 20:20:35 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 20:20:36 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 20:20:36 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 20:20:36 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 20:20:36, status=200, message=Ok)
+2024-08-05 20:20:36 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 20:20:36 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 20:20:36 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 20:20:36 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=by)
+2024-08-05 20:20:36 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 20:20:36 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 20:20:36 ERROR c.t.services.TranslationServiceImpl - Something goes wrong with translation for word <любовь>, status is 403
+2024-08-05 20:20:36 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=, targetLang=by, time=2024/08/05 20:20:36, status=403, message='BY' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT)
+2024-08-05 20:20:36 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 20:20:36 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 20:21:05 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=null, originalLanguage=ru, finalLanguage=en)
+2024-08-05 20:21:06 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=null, originalLang=ru, translatedText=, targetLang=en, time=2024/08/05 20:21:06, status=500, message=Translation went wrong because something from parameters is null!)
+2024-08-05 20:21:06 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 20:21:06 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 20:21:06 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=, originalLanguage=ru, finalLanguage=en)
+2024-08-05 20:21:06 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word =  
+2024-08-05 20:21:07 INFO  c.t.services.TranslationServiceImpl - Request has received: word =  
+2024-08-05 20:21:07 ERROR c.t.services.TranslationServiceImpl - Something goes wrong with translation for word <>, status is 403
+2024-08-05 20:21:07 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=, originalLang=ru, translatedText=, targetLang=en, time=2024/08/05 20:21:07, status=403, message=NO QUERY SPECIFIED. EXAMPLE REQUEST: GET?Q=HELLO&LANGPAIR=EN|IT)
+2024-08-05 20:21:07 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 20:21:07 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 20:21:07 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=en)
+2024-08-05 20:21:07 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 20:21:07 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 20:21:07 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-05 20:21:07 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=Любовь, targetLang=en, time=2024/08/05 20:21:07, status=200, message=Ok)
+2024-08-05 20:21:07 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 20:21:07 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-05 20:21:07 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-05 20:21:07 INFO  c.t.c.TranslationController - Request from user has received: UserRequest(text=любовь, originalLanguage=ru, finalLanguage=by)
+2024-08-05 20:21:07 INFO  c.t.services.TranslationServiceImpl - Sending translation request: word = любовь 
+2024-08-05 20:21:07 INFO  c.t.services.TranslationServiceImpl - Request has received: word = любовь 
+2024-08-05 20:21:08 ERROR c.t.services.TranslationServiceImpl - Something goes wrong with translation for word <любовь>, status is 403
+2024-08-05 20:21:08 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation(ip=37.215.139.173, originalText=любовь, originalLang=ru, translatedText=, targetLang=by, time=2024/08/05 20:21:08, status=403, message='BY' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT)
+2024-08-05 20:21:08 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-05 20:21:08 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
