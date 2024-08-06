@@ -12,14 +12,14 @@
 2024-08-04 02:13:32 INFO  c.t.services.TranslationService - Sending translation request: word = я 
 2024-08-04 02:13:33 INFO  c.t.services.TranslationService - Request has received: word = я 
 2024-08-04 02:13:43 ERROR c.t.services.TranslationService - Something goes wrong with translation
-2024-08-04 02:13:59 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: com.tinkoff_lab.dao.Translation@b10b651
+2024-08-04 02:13:59 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: com.tinkoff_lab.dto.Translation@b10b651
 2024-08-04 02:14:03 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
 2024-08-04 02:14:08 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
 2024-08-04 02:16:45 INFO  c.t.c.TranslationController - Request from user has received: com.tinkoff_lab.requests.UserRequest@58d13163
 2024-08-04 02:16:45 INFO  c.t.services.TranslationService - Sending translation request: word = я 
 2024-08-04 02:16:46 INFO  c.t.services.TranslationService - Request has received: word = я 
 2024-08-04 02:16:46 ERROR c.t.services.TranslationService - Something goes wrong with translation
-2024-08-04 02:16:46 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: com.tinkoff_lab.dao.Translation@44322a78
+2024-08-04 02:16:46 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: com.tinkoff_lab.dto.Translation@44322a78
 2024-08-04 02:16:46 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
 2024-08-04 02:16:46 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
 
@@ -32,7 +32,7 @@
 2024-08-04 02:34:24 INFO  c.t.services.TranslationService - Sending translation request: word = я 
 2024-08-04 02:34:25 INFO  c.t.services.TranslationService - Request has received: word = я 
 2024-08-04 02:34:25 ERROR c.t.services.TranslationService - Something goes wrong with translation for word <я>, status is 403
-2024-08-04 02:34:25 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: com.tinkoff_lab.dao.Translation@4d2be67b
+2024-08-04 02:34:25 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: com.tinkoff_lab.dto.Translation@4d2be67b
 2024-08-04 02:34:25 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
 2024-08-04 02:34:25 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
 2024-08-04 03:57:55 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
@@ -44,7 +44,7 @@
 2024-08-04 03:58:02 INFO  c.t.services.TranslationService - Sending translation request: word = я 
 2024-08-04 03:58:10 INFO  c.t.services.TranslationService - Request has received: word = я 
 2024-08-04 03:58:10 ERROR c.t.services.TranslationService - Something goes wrong with translation for word <я>, status is 403
-2024-08-04 03:58:10 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: com.tinkoff_lab.dao.Translation@1d29b3d1
+2024-08-04 03:58:10 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: com.tinkoff_lab.dto.Translation@1d29b3d1
 2024-08-04 03:58:11 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
 2024-08-04 03:58:11 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
 2024-08-04 03:58:40 INFO  c.t.c.TranslationController - Request from user has received: com.tinkoff_lab.requests.UserRequest@37d30faf
@@ -55,7 +55,7 @@
 2024-08-04 03:58:41 INFO  c.t.services.TranslationService - Sending translation request: word = тебя 
 2024-08-04 03:58:42 INFO  c.t.services.TranslationService - Request has received: word = тебя 
 2024-08-04 03:58:42 INFO  c.t.services.TranslationService - Translation successfully completed
-2024-08-04 03:58:42 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: com.tinkoff_lab.dao.Translation@78f41cd1
+2024-08-04 03:58:42 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: com.tinkoff_lab.dto.Translation@78f41cd1
 2024-08-04 03:58:42 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
 2024-08-04 03:58:42 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
 2024-08-04 03:58:42 INFO  c.t.c.TranslationController - Response is sending to user

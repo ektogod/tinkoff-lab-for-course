@@ -1,13 +1,13 @@
 package com.tinkoff_lab.services;
 
 import com.tinkoff_lab.config.AppConfig;
-import com.tinkoff_lab.dao.Translation;
+import com.tinkoff_lab.dto.Translation;
 import com.tinkoff_lab.exceptions.ExecutorServiceException;
 import com.tinkoff_lab.exceptions.TranslationException;
-import com.tinkoff_lab.requests.UserRequest;
+import com.tinkoff_lab.dto.requests.UserRequest;
 import com.tinkoff_lab.dao.TranslationDAO;
-import com.tinkoff_lab.responses.TranslateResponse;
-import com.tinkoff_lab.responses.UserResponse;
+import com.tinkoff_lab.dto.responses.TranslateResponse;
+import com.tinkoff_lab.dto.responses.UserResponse;
 import com.tinkoff_lab.utils.TranslationUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -43,7 +43,7 @@ public class TranslationServiceImpl implements TranslationService {
     public UserResponse translate(UserRequest request) {
         checkForNullParams(request); // checking request for null fields
 
-        String[] words = request.getText().split(" +");
+        String[] words = request.text().split(" +");
         translatedWords = new String[words.length];
 
         ExecutorService executorService = Executors.newFixedThreadPool(THREADS_CONST);
@@ -52,17 +52,17 @@ public class TranslationServiceImpl implements TranslationService {
             int finalI = i;
             var response = executorService.submit(() -> translateWord(
                             words[finalI],  // sending each word in a thread
-                            request.getOriginalLanguage(),
-                            request.getFinalLanguage(),
+                            request.originalLanguage(),
+                            request.finalLanguage(),
                             finalI));
             try {
                 if (!HttpStatus.valueOf(response.get().getBody().getResponseStatus()).is2xxSuccessful()) {   // checking status - throwing exception if something wrong
                     Translation translation = new Translation(  // needs for writing in db in ExceptionHandler class
                             utils.getIP(),
-                            request.getText(),
-                            request.getOriginalLanguage(),
+                            request.text(),
+                            request.originalLanguage(),
                             "",
-                            request.getFinalLanguage(),
+                            request.finalLanguage(),
                             utils.getMoscowTime(),
                             response.get().getBody().getResponseStatus(),
                             response.get().getBody().getResponseDetails());
@@ -97,10 +97,10 @@ public class TranslationServiceImpl implements TranslationService {
         String translatedText = String.join(" ", translatedWords);
         dao.insert(new Translation(  // saving in database successful translation
                 utils.getIP(),
-                request.getText(),
-                request.getOriginalLanguage(),
+                request.text(),
+                request.originalLanguage(),
                 translatedText,
-                request.getFinalLanguage(),
+                request.finalLanguage(),
                 utils.getMoscowTime(),
                 200,
                 "Ok"));
@@ -138,16 +138,16 @@ public class TranslationServiceImpl implements TranslationService {
     }
 
     private void checkForNullParams(UserRequest request){
-        if (request.getText() == null ||
-                request.getOriginalLanguage() == null ||
-                request.getFinalLanguage() == null){
+        if (request.text() == null ||
+                request.originalLanguage() == null ||
+                request.finalLanguage() == null){
             String message = "Translation went wrong because something from parameters is null!";
             Translation translation = new Translation(  // needs for writing in db in ExceptionHandler class
                     utils.getIP(),
-                    request.getText(),
-                    request.getOriginalLanguage(),
+                    request.text(),
+                    request.originalLanguage(),
                     "",
-                    request.getFinalLanguage(),
+                    request.finalLanguage(),
                     utils.getMoscowTime(),
                     500,
                     message);

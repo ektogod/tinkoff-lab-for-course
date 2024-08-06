@@ -1,6 +1,6 @@
 package com.tinkoff_lab.exceptions;
 
-import com.tinkoff_lab.dao.Translation;
+import com.tinkoff_lab.dto.Translation;
 import lombok.Getter;
 
 @Getter

@@ -2,10 +2,10 @@ package test;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 import com.tinkoff_lab.TinkoffLabApplication;
-import com.tinkoff_lab.dao.Translation;
+import com.tinkoff_lab.dto.Translation;
 import com.tinkoff_lab.dao.TranslationDAO;
 import com.tinkoff_lab.exceptions.DatabaseException;
-import com.tinkoff_lab.requests.UserRequest;
+import com.tinkoff_lab.dto.requests.UserRequest;
 import com.tinkoff_lab.services.ConnectionService;
 import com.tinkoff_lab.services.TranslationServiceImpl;
 import org.junit.jupiter.api.Assertions;
@@ -18,8 +18,6 @@ import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.testcontainers.containers.MySQLContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
@@ -104,9 +102,8 @@ public class DatabaseTest {
                 200,
                 "Ok");
 
-        int key = dao.insert(translation);
-        System.out.println(key);
-        Assertions.assertEquals(translation, dao.findByID(key));
+        int id = dao.insert(translation);
+        Assertions.assertEquals(translation, dao.findByID(id));
     }
 
     @Test
@@ -121,12 +118,13 @@ public class DatabaseTest {
                 200,
                 "Ok");
 
+        final int[] id = new int[1]; // this variant was advised by IDE
         Exception ex = Assertions.assertThrows(DatabaseException.class, () -> {
-            dao.insert(translation);
+            id[0] = dao.insert(translation);
         });
 
         Assertions.assertEquals(ex.getMessage(), "Insertion of query in database goes wrong!");
-        Assertions.assertNull(dao.findByID(1));
+        Assertions.assertNull(dao.findByID(id[0]));
     }
 
     @Test
@@ -142,9 +140,30 @@ public class DatabaseTest {
                 "Ok");
 
         for (int i = 0; i < 5; i++) {
-            int key = dao.insert(translation);
-            Assertions.assertEquals(translation, dao.findByID(key));
+            int id = dao.insert(translation);
+            Assertions.assertEquals(translation, dao.findByID(id));
         }
+    }
+
+    @Test
+    public void testWhenTextIsLargerThan1000(){
+        Translation translation = new Translation(
+                "ip",
+                "a".repeat(1001),
+                "ru",
+                "a".repeat(1001),
+                "be",
+                "2024-08-04 01:53:15",
+                200,
+                "Ok");
+
+        final int[] id = new int[1];
+        Exception ex = Assertions.assertThrows(DatabaseException.class, () ->{
+            id[0] = dao.insert(translation);
+        });
+
+        Assertions.assertEquals(ex.getMessage(), "Insertion of query in database goes wrong!");
+        Assertions.assertNull(dao.findByID(id[0]));
     }
 
     //---------------TESTS WITH USING TRANSLATION SERVICE
@@ -155,12 +174,12 @@ public class DatabaseTest {
         translationService.translate(request);
         Translation dbTranslation = dao.findByID(1);
         Translation correctTranslation = new Translation(
-                dbTranslation.getIp(),
+                dbTranslation.ip(),
                 "Любовь",
                 "ru",
                 "Каханне",
                 "be",
-                dbTranslation.getTime(),
+                dbTranslation.time(),
                 200,
                 "Ok");
 
@@ -183,12 +202,12 @@ public class DatabaseTest {
 //
 //        Translation dbTranslation = dao.findByID(1);
 //        Translation correctTranslation = new Translation(
-//                dbTranslation.getIp(),
+//                dbTranslation.ip(),
 //                "Любовь",
 //                "ru",
 //                "",
 //                "by",
-//                dbTranslation.getTime(),
+//                dbTranslation.time(),
 //                403,
 //                "'BY' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT");
 //

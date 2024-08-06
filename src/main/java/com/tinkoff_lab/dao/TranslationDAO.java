@@ -1,5 +1,6 @@
 package com.tinkoff_lab.dao;
 
+import com.tinkoff_lab.dto.Translation;
 import com.tinkoff_lab.exceptions.DatabaseException;
 import com.tinkoff_lab.services.ConnectionService;
 import org.slf4j.Logger;
@@ -26,30 +27,15 @@ public class TranslationDAO implements DAO<Translation> {            // class fo
         String sql = "INSERT INTO query (IP, Original_Text, Original_Language, Translated_Text, Target_Language, Time, Status, Message) VALUES(?, ?, ?, ?, ?, ?, ?, ?)";
         try (Connection connection = connectionService.getConnection()) {    // getting connection with db
             logger.info("Connection with database established");
+
             PreparedStatement statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-
-            statement.setString(1, entity.getIp());  // preparing the statement
-            statement.setString(2, entity.getOriginalText());
-            statement.setString(3, entity.getOriginalLang());
-            statement.setString(4, entity.getTranslatedText());
-            statement.setString(5, entity.getTargetLang());
-            statement.setString(6, entity.getTime());
-            statement.setInt(7, entity.getStatus());
-            statement.setString(8, entity.getMessage());
-
+            prepareStatement(statement, entity);
             statement.executeUpdate();  // sending to db
 
-            ResultSet generatedKeys = statement.getGeneratedKeys();
-            int key;
-            if (generatedKeys != null && generatedKeys.next()) {
-                key = generatedKeys.getInt(1); // getting ID
-            } else {
-                logger.error("Creating translation failed, no ID obtained. Translation: {}", entity);
-                throw new DatabaseException("Creating translation failed, no ID obtained.");
-            }
-
+            int key = getNewID(statement, entity);
             logger.info("Query has been successfully recorded");
-            return key;
+
+            return key; // returns id of a new note
         } catch (SQLException ex) {
             logger.error("Insertion of query in database goes wrong!");
             throw new DatabaseException("Insertion of query in database goes wrong!");
@@ -81,5 +67,29 @@ public class TranslationDAO implements DAO<Translation> {            // class fo
         }
 
         return null;
+    }
+
+    private void prepareStatement(PreparedStatement statement, Translation entity) throws SQLException {
+        statement.setString(1, entity.ip());  // preparing the statement
+        statement.setString(2, entity.originalText());
+        statement.setString(3, entity.originalLang());
+        statement.setString(4, entity.translatedText());
+        statement.setString(5, entity.targetLang());
+        statement.setString(6, entity.time());
+        statement.setInt(7, entity.status());
+        statement.setString(8, entity.message());
+    }
+
+    private int getNewID(PreparedStatement statement, Translation entity) throws SQLException {
+        ResultSet generatedKeys = statement.getGeneratedKeys();
+        int key = -1;
+        if (generatedKeys != null && generatedKeys.next()) {
+            key = generatedKeys.getInt(1); // getting ID
+        } else {
+            logger.error("Creating translation failed, no ID obtained. Translation: {}", entity);
+            throw new DatabaseException("Creating translation failed, no ID obtained.");
+        }
+
+        return key;
     }
 }
