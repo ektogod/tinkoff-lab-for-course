@@ -12,8 +12,8 @@ import java.sql.*;
 
 @Component
 public class TranslationDAO implements DAO<Translation> {            // class for saving records in database
-    private ConnectionService connectionService;
-    private Logger logger = LoggerFactory.getLogger(TranslationDAO.class);
+    private final ConnectionService connectionService;
+    private final Logger logger = LoggerFactory.getLogger(TranslationDAO.class);
 
     @Autowired
     public TranslationDAO(ConnectionService connectionService) {
@@ -42,7 +42,7 @@ public class TranslationDAO implements DAO<Translation> {            // class fo
         }
     }
 
-    @Override       // this method I use in test class
+    @Override       // this method I used in test classes
     public Translation findByID(int id) {
         String sql = "SELECT * FROM query WHERE ID = ?";
         try (Connection connection = connectionService.getConnection()) {    // getting connection with db

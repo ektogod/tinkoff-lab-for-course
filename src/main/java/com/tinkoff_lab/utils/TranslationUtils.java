@@ -20,7 +20,7 @@ public class TranslationUtils {
         this.config = config;
     }
 
-    public String getIP(){
+    public String getIP() { // getting an external ip address of user
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<IPResponse> entity = restTemplate.getForEntity(config.getIpUrl(), IPResponse.class);
         return entity
@@ -28,12 +28,12 @@ public class TranslationUtils {
                 .ip();
     }
 
-    public String getMoscowTime(){
+    public String getMoscowTime() {  // getting the Moscow time of the request
         ZonedDateTime now = ZonedDateTime
                 .now()
                 .withZoneSameInstant(ZoneId.of("Europe/Moscow"));
 
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-        return now.format(dtf);
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+        return now.format(dateTimeFormatter);
     }
 }

@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/ektogod/translateText")
 
 public class TranslationController {                 // class for receiving requests from users
-    private TranslationServiceImpl translationService;
-    private Logger logger = LoggerFactory.getLogger(TranslationController.class);
+    private final TranslationServiceImpl translationService;
+    private final Logger logger = LoggerFactory.getLogger(TranslationController.class);
 
     @Autowired
     public TranslationController(TranslationServiceImpl translationService) {
@@ -27,6 +27,7 @@ public class TranslationController {                 // class for receiving requ
     public UserResponse translate(@RequestBody UserRequest request) {
         logger.info("Request from user has received: {}", request);
         UserResponse response =  translationService.translate(request);
+
         logger.info("Response is sending to user");
         return response;
     }

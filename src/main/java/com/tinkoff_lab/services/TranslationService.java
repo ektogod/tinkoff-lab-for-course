@@ -4,5 +4,5 @@ import com.tinkoff_lab.dto.requests.UserRequest;
 import com.tinkoff_lab.dto.responses.UserResponse;
 
 public interface TranslationService {
-    public UserResponse translate(UserRequest request);
+    UserResponse translate(UserRequest request);
 }

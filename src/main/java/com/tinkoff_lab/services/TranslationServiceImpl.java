@@ -26,11 +26,11 @@ public class TranslationServiceImpl implements TranslationService {
     private static final int THREADS_CONST = 10;
     private String[] translatedWords;  // for storing translated words here
 
-    private Logger logger = LoggerFactory.getLogger(TranslationServiceImpl.class);
+    private final Logger logger = LoggerFactory.getLogger(TranslationServiceImpl.class);
 
-    private AppConfig appConfig;   //for getting important data
-    private TranslationDAO dao;     // for writing in database
-    private TranslationUtils utils;
+    private final AppConfig appConfig;   //for getting important data
+    private final TranslationDAO dao;     // for writing in database
+    private final TranslationUtils utils;
 
     @Autowired
     public TranslationServiceImpl(AppConfig appConfig, TranslationDAO dao, TranslationUtils utils) {
@@ -41,7 +41,7 @@ public class TranslationServiceImpl implements TranslationService {
 
     @Override
     public UserResponse translate(UserRequest request) {
-        checkForNullParams(request); // checking request for null fields
+        checkForNullParams(request); // checking request for null fields and throwing exception in case of troubles
 
         String[] words = request.text().split(" +");
         translatedWords = new String[words.length];
@@ -51,12 +51,13 @@ public class TranslationServiceImpl implements TranslationService {
         for (int i = 0; i < words.length; i++) {   // translating each word separately
             int finalI = i;
             var response = executorService.submit(() -> translateWord(
-                            words[finalI],  // sending each word in a thread
-                            request.originalLanguage(),
-                            request.finalLanguage(),
-                            finalI));
+                    words[finalI],  // sending each word in a thread
+                    request.originalLanguage(),
+                    request.finalLanguage(),
+                    finalI));
             try {
-                if (!HttpStatus.valueOf(response.get().getBody().getResponseStatus()).is2xxSuccessful()) {   // checking status - throwing exception if something wrong
+                var resultBody = response.get().getBody();
+                if (!HttpStatus.valueOf(resultBody.getResponseStatus()).is2xxSuccessful()) {   // checking status - throwing exception if something wrong
                     Translation translation = new Translation(  // needs for writing in db in ExceptionHandler class
                             utils.getIP(),
                             request.text(),
@@ -64,14 +65,14 @@ public class TranslationServiceImpl implements TranslationService {
                             "",
                             request.finalLanguage(),
                             utils.getMoscowTime(),
-                            response.get().getBody().getResponseStatus(),
-                            response.get().getBody().getResponseDetails());
+                            resultBody.getResponseStatus(),
+                            resultBody.getResponseDetails());
 
                     logger.error("Something goes wrong with translation for word <{}>, status is {}",
                             words[finalI],
-                            response.get().getBody().getResponseStatus());
+                            resultBody.getResponseStatus());
 
-                    throw new TranslationException(response.get().getBody().getResponseDetails(), translation);
+                    throw new TranslationException(resultBody.getResponseDetails(), translation);
                 }
             } catch (InterruptedException | ExecutionException e) {
                 logger.error("Something goes wrong with thread: interruption or failing of execution occurred!");
@@ -137,10 +138,10 @@ public class TranslationServiceImpl implements TranslationService {
         return response;
     }
 
-    private void checkForNullParams(UserRequest request){
+    private void checkForNullParams(UserRequest request) {
         if (request.text() == null ||
                 request.originalLanguage() == null ||
-                request.finalLanguage() == null){
+                request.finalLanguage() == null) {
             String message = "Translation went wrong because something from parameters is null!";
             Translation translation = new Translation(  // needs for writing in db in ExceptionHandler class
                     utils.getIP(),
